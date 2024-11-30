@@ -64,4 +64,83 @@ return {
         "When lines don't wrap ('wrap' off): To the leftmost character of the current line that is on the screen.",
         "Differs from '0' when the first character of the line is not on the screen.",
     },
+    {
+        "g^ When lines wrap ('wrap' on): To the first non-blank character of the screen line. |exclusive| motion.",
+        "Differs from '^' when a line is wider than the screen.",
+        "When lines don't wrap ('wrap' off): To the leftmost non-blank character of the current line that is on the screen.",
+        "Differs from '^' when the first non-blank character of the line is not on the screen.",
+    },
+    {"gm is like 'g0', but half a screenwidth to the right (or as much as possible)."},
+    {
+        "gM is like 'g0', but to halfway the text of the line. With a count: to this percentage of text in the line.",
+        "Thus '10gM' is near the start of the text and '90gM' is near the end of the text.",
+    },
+    {
+        "g$ Usage: When lines wrap ('wrap' on): To the last character of the screen line and [count - 1] screen lines",
+        "downward |inclusive|.  Differs from '$' when a line is wider than the screen.",
+        "When lines don't wrap ('wrap' off): To the rightmost character of the current line that is visible on the screen.",
+        "Differs from '$' when the last character of the line is not on the screen or when a count is used.",
+        "Additionally, vertical movements keep the column, instead of going to the end of the line.",
+        "When 'virtualedit' is enabled moves to the end of the screen line.",
+    },
+    {"g<End> is like 'g$' but to the last non-blank character instead of the last character."},
+    {"| is used to move to the screen column [count] in the current line. |exclusive| motion."},
+    {
+        "f{char} is used to move to the [count]'th occurrence of {char} to the right.",
+        "The cursor is placed on {char} |inclusive|. {char} can be entered as a digraph |digraph-arg|.",
+        "When 'encoding' is set to Unicode, composing characters may be used, see |utf-8-char-arg|.",
+    },
+    {
+        "F{char} is used to move to the [count]'th occurrence of {char} to the left.",
+        "The cursor is placed on {char} |exclusive|. {char} can be entered like with the |f| command.",
+    },
+    {
+        "t{char} is used to move to the [count]'th before occurrence of {char} to the right.", "The cursor is placed",
+        "on, the character left of {char} |inclusive|. {char} can be entered like with the |f| command.",
+    },
+    {
+        "T{char} is used to move to the [count]'th after occurrence of {char} to the left. The cursor is placed on the",
+        "character right of {char} |exclusive|. {char} can be entered like with the |f| command.",
+    },
+    {
+        "; is used to repeat latest f, t, F or T [count] times",
+        ", is used to repeat latest f, t, F or T in opposite direction [count] times.",
+    },
+    {"k or <Up> or CTRL-P is used to move to the [count] lines upward |linewise|."},
+    {"j or <Down> or CTRL-J or <NL> or CTRL-N is used to move to the [count] lines downward |linewise|."},
+    {
+        "gk or g<Up> is used to move to the [count] display lines upward. |exclusive| motion. Differs from 'k' when",
+        "lines wrap, and when used with an operator, because it's not linewise.",
+    },
+    {
+        "gj g<Down> is used to move to the [count] display lines downward. |exclusive| motion. Differs from 'j' when",
+        "lines wrap, and when used with an operator, because it's not linewise.",
+    },
+    {"- is used to move to the [count] lines upward, on the first non-blank character |linewise|."},
+    {"+ or CTRL-M or <CR> is used to move to the [count] lines downward, on the first non-blank character |linewise|."},
+    {"_ is used to move t [count] - 1 lines downward, on the first non-blank character |linewise|."},
+    {
+        "G is used to goto line [count], default last line, on the first non-blank character |linewise|.",
+        "If 'startofline' not set, keep the same column. G is one of the |jump-motions|.",
+    },
+    {"<C-End> is used to goto line [count], default last line, on the last character |inclusive|."},
+    {
+        "<C-Home> or gg is used to goto line [count], default first line, on the first non-blank character |linewise|.",
+        "If 'startofline' not set, keep the same column."
+    },
+    {
+        ":[range] is used to set the cursor on the last line number in [range]. In Ex mode, print the lines in [range].",
+        "[range] can also be just one line number, e.g., ':1' or \":'m\". In contrast with |G| this command does not",
+        "modify the |jumplist|.",
+    },
+    {
+        "{count}% is used Go to {count} percentage in the file, on the first non-blank in the line |linewise|. To",
+        "compute the new line number this formula is used: ({count} * number-of-lines + 99) / 100"
+    },
+    {
+        ":[range]go[to] [count] or [count]go is used to go to [count] byte in the buffer. |exclusive| motion. Default",
+        "[count] is one, start of the file.  When", "giving [range], the last number in it used as the byte count.",
+        "End-of-line characters are counted depending on the current 'fileformat' setting.",
+    },
+    -- should start from line 377
 }
