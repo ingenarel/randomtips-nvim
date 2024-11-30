@@ -25,16 +25,14 @@ return {
     },
     {"A count before and after the first character is multiplied, thus `2y3y` yanks six lines."},
     {
-        "When a motion is not of the type you would like to use, you can force another type by using 'v', 'V' or",
-        "CTRL-V just after the operator.",
+        "When a motion is not of the type you would like to use, you can force another type by using 'v'/'V'/'CTRL-V' just after the operator.",
         "dj deletes two lines, dvj deletes from the cursor position until the character below the cursor",
         "d<C-V>j deletes the character under the cursor and the character below the cursor."
     },
     {
-        "When v is used after an operator, before the motion command it Forces the operator to work charwise, also when",
-        "the motion is linewise. If the motion was linewise, it will become |exclusive|.",
-        "If the motion already was charwise, toggle inclusive/exclusive.", "This can be used to make an exclusive",
-        "motion inclusive and an inclusive motion exclusive."
+        "When v is used after an operator, before the motion command it Forces the operator to work charwise, also when the motion is linewise.",
+        "If the motion was linewise, it will become |exclusive|.", "If the motion already was charwise, toggle",
+        "inclusive/exclusive. This can be used to make an exclusive", "motion inclusive and an inclusive motion exclusive."
     },
     {
         "When CTRL-V is used after an operator, before the motion command it Forces the operator to work blockwise.",
@@ -45,13 +43,13 @@ return {
     {"Use l or <Right> or <Space> [count] characters is used to move to the right. it's an |exclusive| motion."},
     {"0 is used to move to the the first character of the line. It's an |exclusive| motion."},
     {
-        "<Home> is used to move the first character of the line. it's an |exclusive| motion. When moving up or down",
-        "next, stay in same TEXT column (if possible).",
+        "<Home> is used to move the first character of the line. it's an |exclusive| motion.",
+        "When moving up or down next, stay in same TEXT column (if possible).",
     },
     {"^ is used to move to the first non-blank character of the line. It's |exclusive| motion. Any count is ignored."},
     {
-        "$ or <End> is used to move to the end of the line. When a count is given also go [count - 1] lines downward, or",
-        "as, far is possible.",
+        "$ or <End> is used to move to the end of the line.",
+        "When a count is given also go [count - 1] lines downward, or as, far is possible.",
         "It's an |inclusive| motion. If a count of 2 or larger is given and the cursor is on the last line, that is an",
         "error and the cursor doesn't move. In Visual mode the cursor goes to just after the last character in the line.",
         "When 'virtualedit' is active, '$' may move the cursor back from past the end of the line to the last character in",
@@ -76,8 +74,8 @@ return {
         "Thus '10gM' is near the start of the text and '90gM' is near the end of the text.",
     },
     {
-        "g$ Usage: When lines wrap ('wrap' on): To the last character of the screen line and [count - 1] screen lines",
-        "downward |inclusive|.  Differs from '$' when a line is wider than the screen.",
+        "g$ Usage: When lines wrap ('wrap' on): To the last character of the screen line and [count - 1] screen lines downward |inclusive|.",
+        "Differs from '$' when a line is wider than the screen.",
         "When lines don't wrap ('wrap' off): To the rightmost character of the current line that is visible on the screen.",
         "Differs from '$' when the last character of the line is not on the screen or when a count is used.",
         "Additionally, vertical movements keep the column, instead of going to the end of the line.",
@@ -99,8 +97,9 @@ return {
         "on, the character left of {char} |inclusive|. {char} can be entered like with the |f| command.",
     },
     {
-        "T{char} is used to move to the [count]'th after occurrence of {char} to the left. The cursor is placed on the",
-        "character right of {char} |exclusive|. {char} can be entered like with the |f| command.",
+        "T{char} is used to move to the [count]'th after occurrence of {char} to the left.",
+        "The cursor is placed on the character right of {char} |exclusive|.",
+        "{char} can be entered like with the |f| command.",
     },
     {
         "; is used to repeat latest f, t, F or T [count] times",
@@ -109,12 +108,12 @@ return {
     {"k or <Up> or CTRL-P is used to move to the [count] lines upward |linewise|."},
     {"j or <Down> or CTRL-J or <NL> or CTRL-N is used to move to the [count] lines downward |linewise|."},
     {
-        "gk or g<Up> is used to move to the [count] display lines upward. |exclusive| motion. Differs from 'k' when",
-        "lines wrap, and when used with an operator, because it's not linewise.",
+        "gk or g<Up> is used to move to the [count] display lines upward. |exclusive| motion.",
+        "Differs from 'k' when lines wrap, and when used with an operator, because it's not linewise.",
     },
     {
-        "gj g<Down> is used to move to the [count] display lines downward. |exclusive| motion. Differs from 'j' when",
-        "lines wrap, and when used with an operator, because it's not linewise.",
+        "gj g<Down> is used to move to the [count] display lines downward. |exclusive| motion.",
+        "Differs from 'j' when lines wrap, and when used with an operator, because it's not linewise.",
     },
     {"- is used to move to the [count] lines upward, on the first non-blank character |linewise|."},
     {"+ or CTRL-M or <CR> is used to move to the [count] lines downward, on the first non-blank character |linewise|."},
@@ -134,13 +133,41 @@ return {
         "modify the |jumplist|.",
     },
     {
-        "{count}% is used Go to {count} percentage in the file, on the first non-blank in the line |linewise|. To",
-        "compute the new line number this formula is used: ({count} * number-of-lines + 99) / 100"
+        "{count}% is used Go to {count} percentage in the file, on the first non-blank in the line |linewise|.",
+        "To compute the new line number this formula is used: ({count} * number-of-lines + 99) / 100"
     },
     {
-        ":[range]go[to] [count] or [count]go is used to go to [count] byte in the buffer. |exclusive| motion. Default",
-        "[count] is one, start of the file.  When", "giving [range], the last number in it used as the byte count.",
+        ":[range]go[to] [count] or [count]go is used to go to [count] byte in the buffer. |exclusive| motion.",
+        "Default [count] is one, start of the file.  When", "giving [range], the last number in it used as the byte count.",
         "End-of-line characters are counted depending on the current 'fileformat' setting.",
     },
-    -- should start from line 377
+    {"<S-Right> or w is used to move to the [count] words forward. |exclusive| motion."},
+    {"<C-Right> or W is used to move to the [count] WORDS forward. |exclusive| motion."},
+    {"e is used to move forward to the end of word [count] |inclusive|. Does not stop in an empty line."},
+    {"E is used to move forward to the end of WORD [count] |inclusive|. Does not stop in an empty line."},
+    {"<S-Left> or b is used to move to [count] words backward. |exclusive| motion."},
+    {"<C-Left> or B is used to move to [count] WORDS backward. |exclusive| motion."},
+    {"ge is used to move backward to the end of word [count] |inclusive|."},
+    {"gE is used to move backward to the end of WORD [count] |inclusive|."},
+    {"( is used to move to [count] |sentence|s backward. |exclusive| motion."},
+    {") is used to move to [count] |sentence|s forward. |exclusive| motion."},
+    {"{ is used to move to [count] |paragraph|s backward. |exclusive| motion."},
+    {"} is used to move to [count] |paragraph|s forward. |exclusive| motion."},
+    {
+        "]] is used to move to [count] |section|s forward or to the next '{' in the first column.",
+        "When used after an operator, then also stops below a '}' in the first column. |exclusive| Note that",
+        "|exclusive-linewise| often applies."
+    },
+    {
+        "][ is used to move to [count] |section|s forward or to the next '}' in the first column.",
+        "|exclusive| Note that |exclusive-linewise| often applies.",
+    },
+    {
+        "[[ is used to move to [count] |section|s backward or to the previous '{' in the first column.",
+        "|exclusive| Note that |exclusive-linewise| often applies.",
+    },
+    {
+        "[] is used to move to [count] |section|s backward or to the previous '}' in the first column.",
+        "|exclusive| Note that |exclusive-linewise| often applies.",
+    },
 }
