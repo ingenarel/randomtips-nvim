@@ -4,6 +4,7 @@ M = {};
 function M.ReturnRandomTip()
     M.tips = {};
     require("randomtips.moveTips");
+    require("randomtips.moveFaqs")
     local x = 0;
     for i = 1, #M.tips do
         x = x + #M.tips[i];
