@@ -1,4 +1,4 @@
-return {
+table.insert(M.tips, {
     {"Use hjkl to move left, down, up, and right respectively"},
     {"Close this window: Use ':q<Enter>'"},
     {"Get out of Vim: Use ':qa!<Enter>' (careful, all changes are lost!)."},
@@ -170,4 +170,4 @@ return {
         "[] is used to move to [count] |section|s backward or to the previous '}' in the first column.",
         "|exclusive| Note that |exclusive-linewise| often applies.",
     },
-}
+})
