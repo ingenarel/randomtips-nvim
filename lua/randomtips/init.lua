@@ -7,6 +7,8 @@ function m.ReturnRandomTip(tipsLists)
     if tipsLists == nil then
         table.insert(tips, require("randomtips.moveTips"))
         table.insert(tips, require("randomtips.moveFaqs"))
+        table.insert(tips, require("randomtips.skyrim"))
+        table.insert(tips, require("randomtips.witcher3"))
     else
         for i = 1, #tipsLists do
             table.insert(tips, tipsLists[i])
