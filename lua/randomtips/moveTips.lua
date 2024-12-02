@@ -1,4 +1,4 @@
-table.insert(M.tips, {
+return {
     {"Use hjkl to move left, down, up, and right respectively"},
     {"Close this window: Use ':q<Enter>'"},
     {"Get out of Vim: Use ':qa!<Enter>' (careful, all changes are lost!)."},
@@ -260,4 +260,4 @@ table.insert(M.tips, {
         "in visual mode, i\" or i' or i` is like a\", a' and a`, but exclude the quotes and repeating won't extend the Visual selection.",
         "Special case: With a count of 2 the quotes are included, but no extra white space as with a\"/a'/a`.",
     },
-})
+}

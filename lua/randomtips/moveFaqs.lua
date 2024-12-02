@@ -1,4 +1,4 @@
-table.insert(M.tips, {
+return {
     {
         "Experienced users prefer the hjkl keys because they are always right under their fingers.",
         "Beginners often prefer the arrow keys, because they do not know what the hjkl keys do. The mnemonic value of",
@@ -89,4 +89,4 @@ table.insert(M.tips, {
         "end of a C function, use '][' (forward) or '[]' (backward). Note that the first character of the command",
         "determines the search direction.",
     },
-})
+}
