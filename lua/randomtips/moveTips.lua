@@ -58,7 +58,7 @@ table.insert(M.tips, {
     {"g_ is used to move to the the last non-blank character of the line and [count - 1] lines downward |inclusive|."},
     {
         "g0 or g<Home> is used When lines wrap ('wrap' on): To the first character of the screen line. |exclusive|",
-        "motion.  Differs from '0' when a line is wider than the screen.",
+        "motion. Differs from '0' when a line is wider than the screen.",
         "When lines don't wrap ('wrap' off): To the leftmost character of the current line that is on the screen.",
         "Differs from '0' when the first character of the line is not on the screen.",
     },
@@ -138,7 +138,7 @@ table.insert(M.tips, {
     },
     {
         ":[range]go[to] [count] or [count]go is used to go to [count] byte in the buffer. |exclusive| motion.",
-        "Default [count] is one, start of the file.  When", "giving [range], the last number in it used as the byte count.",
+        "Default [count] is one, start of the file. When", "giving [range], the last number in it used as the byte count.",
         "End-of-line characters are counted depending on the current 'fileformat' setting.",
     },
     {"<S-Right> or w is used to move to the [count] words forward. |exclusive| motion."},
@@ -169,5 +169,95 @@ table.insert(M.tips, {
     {
         "[] is used to move to [count] |section|s backward or to the previous '}' in the first column.",
         "|exclusive| Note that |exclusive-linewise| often applies.",
+    },
+    {
+        "in visual mode, aw 'a word', selects [count] words (see |word|). Leading or trailing white space is included, but not counted.",
+        "When used in Visual linewise mode 'aw' switches to Visual charwise mode.",
+    },
+    {
+        "in visual mode, iw 'inner word', selects [count] words (see |word|). White space between words is counted too.",
+        "When used in Visual linewise mode 'iw' switches to Visual charwise mode.",
+    },
+    {
+        "in visual mode, aW 'a WORD', selects [count] WORDs (see |WORD|). Leading or trailing white space is included, but not counted.",
+        "When used in Visual linewise mode 'aW' switches to Visual charwise mode.",
+    },
+    {
+        "in visual mode, iW 'inner WORD', selects [count] WORDs (see |WORD|). White space between words is counted too.",
+        "When used in Visual linewise mode 'iW' switches to Visual charwise mode.",
+    },
+    {"in visual mode, as 'a sentence', selects [count] sentences (see |sentence|). When used in Visual mode it is made charwise."},
+    {"in visual mode, is 'inner sentence', selects [count] sentences (see |sentence|). When used in Visual mode it is made charwise."},
+    {
+        "in visual mode, ap 'a paragraph', selects [count] paragraphs (see |paragraph|). Exception: a blank line (only containing white space)",
+        "is also a paragraph boundary. When used in Visual mode it is made linewise.",
+    },
+    {
+        "in visual mode, ip 'inner paragraph', selects [count] paragraphs (see |paragraph|). Exception: a blank line (only containing white space)",
+        "is also a paragraph boundary. When used in Visual mode it is made linewise.",
+    },
+    {
+        "in visual mode, a] or a[ selects [count] '[' ']' blocks.",
+        "This goes backwards to the [count] unclosed '[', and finds the matching ']'.",
+        "The enclosed text is selected, including the '[' and ']'.",
+        "The |cpo-M| option flag is used to handle escaped brackets. When used in Visual mode it is made charwise.",
+    },
+    {
+        "in visual mode, i] or i[ selects [count] '[' ']' blocks.",
+        "This goes backwards to the [count] unclosed '[', and finds the matching ']'.",
+        "The enclosed text is selected, excluding the '[' and ']'. It's an error to selects an empty inner block like '[]'.",
+        "The |cpo-M| option flag is used to handle escaped brackets. When used in Visual mode it is made charwise.",
+    },
+    {
+        "in visual mode, a) or a( or ab selects [count] blocks, from '[count] [(' to the matching ')', including the '(' and ')'",
+        "Does not include white space outside of the parenthesis.",
+        "The |cpo-M| option flag is used to handle escaped parenthesis. When used in Visual mode it is made charwise.",
+    },
+    {
+        "in visual mode, i) or i( or ib selects [count] blocks, from '[count] [(' to the matching ')', excluding the '(' and ')'",
+        "If the cursor is not inside a () block, then find the next '('.  It's an error to selects an empty inner block like '()'.",
+        "The |cpo-M| option flag is used to handle escaped parenthesis. When used in Visual mode it is made charwise.",
+    },
+    {
+        "in visual mode, a> *v_a>* *v_a<* *a>* *a<*",
+        "a< 'a <> block', selects [count] <> blocks, from the",
+        "[count]'th unmatched '<' backwards to the matching",
+        "'>', including the '<' and '>'.  The |cpo-M| option flag",
+        "is used to handle escaped '<' and '>'.",
+        "When used in Visual mode it is made charwise.",
+    },
+    {
+        "in visual mode, i> or i< 'inner <> block', selects [count] <> blocks, from the [count]'th unmatched '<' backwards to the matching '>', excluding the '<' and '>'",
+        "It's an error to selects an empty inner block like '<>'.",
+        "The |cpo-M| option flag is used to handle escaped '<' and '>'. When used in Visual mode it is made charwise.",
+    },
+    {
+        "in visual mode, at selects [count] tag blocks, from the [count]'th unmatched '<aaa>' backwards to the matching '</aaa>', including the '<aaa>' and '</aaa>'.",
+        "See |tag-blocks| about the details. When used in Visual mode it is made charwise.",
+    },
+    {
+        "in visual mode, it 'inner tag block', selects [count] tag blocks, from the [count]'th unmatched '<aaa>' backwards to the matching '</aaa>', excluding the '<aaa>' and '</aaa>'.",
+        "See |tag-blocks| about the details. When used in Visual mode it is made charwise.",
+    },
+    {
+        "in visual mode, a} or a{ or aB selects [count] Blocks, from `[count] [{` to the matching '}', including the '{' and '}'",
+        "The |cpo-M| option flag is used to handle escaped braces. When used in Visual mode it is made charwise.",
+    },
+    {
+        "in visual mode, i} or i{ or iB selects [count] Blocks, from `[count] [{` to the matching '}', excluding the '{' and '}'",
+        "It's an error to selects an empty inner block like '{}'. The |cpo-M| option flag is used to handle escaped braces.",
+        "When used in Visual mode it is made charwise.",
+    },
+    {
+        "in visual mode, a\" or a' or a` selects the text from the previous quote until the next quote.",
+        "The 'quoteescape' option is used to skip escaped quotes. Only works within one line.",
+        "When the cursor starts on a quote, Vim will figure out which quote pairs form a string by searching from the start of the line.",
+        "Any trailing white space is included, unless there is none, then leading white space is included.",
+        "When used in Visual mode it is made charwise. Repeating this object in Visual mode another string is included.",
+        "A count is currently not used.",
+    },
+    {
+        "in visual mode, i\" or i' or i` is like a\", a' and a`, but exclude the quotes and repeating won't extend the Visual selection.",
+        "Special case: With a count of 2 the quotes are included, but no extra white space as with a\"/a'/a`.",
     },
 })
