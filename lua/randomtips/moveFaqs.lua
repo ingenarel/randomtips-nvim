@@ -89,4 +89,12 @@ return {
         "end of a C function, use '][' (forward) or '[]' (backward). Note that the first character of the command",
         "determines the search direction.",
     },
+    {
+        "Note the difference between using a movement command and an object.",
+        "The movement command operates from cursor position to where the movement takes us.",
+        "When using an object the whole object is operated upon, no matter where on the object the cursor is.",
+        "For example, compare 'dw' and 'daw':",
+        "'dw' deletes from the cursor position to the start of the next word,",
+        "'daw' deletes the word under the cursor and the space after or before it.",
+    }
 }
