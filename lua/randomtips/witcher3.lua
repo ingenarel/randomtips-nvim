@@ -1,3 +1,3 @@
 return {
-    {"Winds howling..."}
+    { "Winds howling..." },
 }

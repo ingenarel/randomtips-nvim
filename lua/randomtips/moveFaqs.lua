@@ -46,7 +46,7 @@ return {
         "A word consists of a sequence of letters, digits, underscores, or a sequence of other non-blank characters, separated with spaces/tabs/<EOL>.",
         "This can be changed with the 'iskeyword' option. An empty line is also considered to be a word.",
     },
-    {"A WORD consists of a sequence of non-blank characters, separated with white space, or an empty line."},
+    { "A WORD consists of a sequence of non-blank characters, separated with white space, or an empty line." },
     {
         "A sequence of folded lines is counted for one word of a single character.",
         "'w' and 'W', 'e' and 'E' move to the start/end of the first word or WORD after a range of folded lines.",
@@ -56,7 +56,9 @@ return {
         "'cw' and 'cW' are treated like 'ce' and 'cE' if the cursor is on a non-blank.",
         "This is Vi-compatible, see |cpo-_| to change the behavior.",
     },
-    {"Using 'w' motion in combination with an operator and the last word moved over is at the end of a line, the end of that word becomes the end of the operated text, not the first word in the next line."},
+    {
+        "Using 'w' motion in combination with an operator and the last word moved over is at the end of a line, the end of that word becomes the end of the operated text, not the first word in the next line.",
+    },
     {
         "The original Vi implementation of 'e' is buggy.",
         "For example, the 'e' command will stop on the first character of a line if the previous line was empty.",
@@ -81,7 +83,7 @@ return {
     {
         "A section begins after a form-feed (<C-L>) in the first column and at each of a set of section macros, specified by the pairs of characters in the 'sections' option.",
         "The default is 'SHNHH HUnhsh', which defines a section to start at the nroff macros:",
-        "'.SH', '.NH', '.H', '.HU', '.nh' and '.sh'."
+        "'.SH', '.NH', '.H', '.HU', '.nh' and '.sh'.",
     },
     {
         "The ']]' and '[[' commands stop at the '{' in the first column.",
@@ -96,5 +98,5 @@ return {
         "For example, compare 'dw' and 'daw':",
         "'dw' deletes from the cursor position to the start of the next word,",
         "'daw' deletes the word under the cursor and the space after or before it.",
-    }
+    },
 }
