@@ -1,7 +1,17 @@
-### this plugin isn't finished yet.
+### This plugin isn't finished yet.
 
-questions that you may have:
-- when will it be finished?
-    when i complete reading and understanding the full docs. but i do try to update it regularly tho.
-- why am i not just writing a parser for vimdocs and just extract the motion and the data?
-    because this is not just a personal project, it's also my journey reading and understanding the docs itself
+Questions that you may have:
+- When will it be finished?
+    When I complete reading and understanding the full docs. But I do try to update it regularly though.
+- Why am I not just writing a parser for vimdocs and just extract the motion and the data?
+    Because this is not just a personal project, it's also my journey reading and understanding the docs itself
+
+### CREDITS:
+
+the [vtip](github.com/ingenarel/randomtips-nvim/blob/master/lua/randomtips/vtip.lua) file's tips are extracted from https://vtip.43z.one/
+
+All credits for those tips go to the author of the site, h43z
+
+Their site:
+
+https://h.43z.one/
