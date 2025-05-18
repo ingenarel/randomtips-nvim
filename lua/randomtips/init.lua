@@ -10,6 +10,7 @@ function m.ReturnRandomTip(tipsLists)
         table.insert(tips, require("randomtips.skyrim"))
         table.insert(tips, require("randomtips.witcher3"))
         table.insert(tips, require("randomtips.vtip"))
+        table.insert(tips, require("randomtips.gathered"))
     else
         for i = 1, #tipsLists do
             table.insert(tips, tipsLists[i])
