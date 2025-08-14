@@ -1,4 +1,5 @@
 return {
+    --witcher 3 game {{{
     { "Winds howling..." },
     {
         "Hatred And Prejudice Will Never Be Eradicated. And Witch Hunts Will Never Be About Witches. To Have A Scapegoat - That’s The Key.",
@@ -23,4 +24,14 @@ return {
     { "Only the innocent burn in Novigrad" },
     { "When the time of the White Frost comes, do not eat the yellow snow." },
     { "THAT BITCH HEXED ME!!!" },
+    --witcher 3 game }}}
+    --books {{{
+    --the last wish {{{
+    {
+        "'Evil is evil, Stregobor,' said the witcher seriously as he got up. 'Lesser, greater, middling, it's all the same.",
+        "Proportions are negotiated, boundaries blurred. I'm not a pious hermit, I haven't done only good in my life.",
+        "But if I'm to choose between one evil and another, then I prefer not to choose at all.",
+    },
+    --}}}
+    --books}}}
 }
