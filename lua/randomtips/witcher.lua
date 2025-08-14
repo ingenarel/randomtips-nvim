@@ -30,7 +30,20 @@ return {
     {
         "'Evil is evil, Stregobor,' said the witcher seriously as he got up. 'Lesser, greater, middling, it's all the same.",
         "Proportions are negotiated, boundaries blurred. I'm not a pious hermit, I haven't done only good in my life.",
-        "But if I'm to choose between one evil and another, then I prefer not to choose at all.",
+        "But if I'm to choose between one evil and another, then I prefer not to choose at all.'",
+    },
+    {
+        "I wanted the girl, sobbing with gratitude, to kiss her saviour on the hands, and her father to thank me on his knees.",
+        "In reality her father fled with his attackers, and the girl, drenched in the bald man's blood, threw up, became hysterical",
+        "and fainted in fear when I approached her. Since then, I've only very rarely interfered in such matters.",
+    },
+    {
+        "Mistakes? Of course I've made them. But I keep to my principles. No, not the code. Although I have at times",
+        "hidden behind a code. People like that. Those who follow a code are often respected and held in high esteem.",
+        "But no one's ever compiled a witcher's code. I invented mine. Just like that. And keep to it.                                                        ",
+    },
+    {
+        "\"The fact that you don't believe in any gods shouldn't be a problem - I don't know many priests who do\"",
     },
     --}}}
     --books}}}
