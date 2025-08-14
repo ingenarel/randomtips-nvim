@@ -8,7 +8,7 @@ function m.ReturnRandomTip(tipsLists)
         table.insert(tips, require("randomtips.moveTips"))
         table.insert(tips, require("randomtips.moveFaqs"))
         table.insert(tips, require("randomtips.skyrim"))
-        table.insert(tips, require("randomtips.witcher3"))
+        table.insert(tips, require("randomtips.witcher"))
         table.insert(tips, require("randomtips.vtip"))
         table.insert(tips, require("randomtips.gathered"))
     else
