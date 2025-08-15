@@ -66,5 +66,18 @@ return {
         "\"The fact that you don't believe in any gods shouldn't be a problem - I don't know many priests who do\"",
     },
     --}}}
+    {
+        "Because it was us, human beings, who were the intruders here.",
+        "This land was ruled by dragons, manticores, griffins and amphisboenas, vampires and werewolves, striga, kikimoras,",
+        "chimerae and flying drakes. And this land had to be taken from them bit by bit, every valley, every mountain pass,",
+        "every forest and every meadow.",
+    },
+    {
+        "'People,' Geralt turned his head, like to invent monsters and monstrosities. Then they seem less monstrous themselves.",
+        "When they get blind-drunk, cheat, steal, beat their wives, starve an old woman, when they kill a trapped fox with an axe",
+        "or riddle the last existing unicorn with arrows, they like to think that the Bane entering cottages at daybreak",
+        "is more monstrous than they are. They feel better then. They find it easier to live.' ",
+    },
+    --the last wish }}}
     --books}}}
 }
