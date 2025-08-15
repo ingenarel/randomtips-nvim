@@ -65,7 +65,6 @@ return {
     {
         "\"The fact that you don't believe in any gods shouldn't be a problem - I don't know many priests who do\"",
     },
-    --}}}
     {
         "Because it was us, human beings, who were the intruders here.",
         "This land was ruled by dragons, manticores, griffins and amphisboenas, vampires and werewolves, striga, kikimoras,",
@@ -79,5 +78,54 @@ return {
         "is more monstrous than they are. They feel better then. They find it easier to live.' ",
     },
     --the last wish }}}
+    --season of storms{{{
+    {
+        "Kerack, a city in the northern kingdom of Cidaris, at the mouth of the River Adalatte.",
+        "Once the capital of the independent kingdom of K., which, as the result of inept governments and the extinction",
+        "of the royal line, fell into decline, lost its significance and became parcelled up by its neighbours and incorporated",
+        "into them. It has a port, several factories, a lighthouse and roughly two thousand residents.",
+    },
+    {
+        "Guard against disappointments, because appearances can deceive. Things that are really as they seem are rare.",
+    },
+    {
+        "A witcher sword distinguishes itself by being, as it were, an amalgam of other swords, the fifth essence of what is best in other weapons.",
+        "The first-rate steel and manner of forging typical of dwarven foundries and smithies lend the blade lightness, but also extraordinary resilience.",
+        "A witcher sword is also sharpened in the dwarven fashion, a secret fashion, may we add, and one that shall remain secret forever, for",
+        "the mountain dwarves guard their arts jealously. For a sword whetted by dwarves can cut in two a silken scarf thrown into the air. We know from",
+        "the accounts of eyewitnesses that witchers were able to accomplish the same trick with their swords.       ",
+    },
+    {
+        "“What a woman has a natural right to,” replied Coral, dryly, “cannot—ipso facto—be immoral.”",
+    },
+    {
+        "It is not only the execution and the excellence of the craft that determine the quality of a witcher’s sword.",
+        "As with mysterious elven or gnomish blades, whose secret has been lost, the mysterious power of a witcher’s sword is bound to the hand and skill",
+        "of the witcher wielding it. And, forsooth, owing to that magic’s mysteries it is greatly potent against the Dark Powers.",
+    },
+    {
+        "I shall reveal one secret to you. About witcher swords. It’s poppycock that they have some kind of secret power.",
+        "And that they are supposedly wonderful weapons. That there are no better ones. It’s all fiction, invented for the sake of appearances.",
+        "I know this from a quite certain source.",
+    },
+    {
+        "Sending matter is an elaborate, sophisticated and subtle thing, hence before setting about teleporting, one must without fail",
+        "defecate and empty the bladder.",
+    },
+    {
+        '"Va’esse deireádh aep eigean, va’esse eigh faidh’ar"',
+        '"something ends, something begins."',
+    },
+    {
+        "A flickering candle, the fire went out; A cold wind blew perceptibly; And the days pass; And time passes; In silence and imperceptibly",
+        "You’re with me endlessly and endlessly; Something joins us, but not perfectly",
+        "For the days pass; For time passes; In silence and imperceptibly; The memory of travelled paths and roads; Remain in us irrevocably",
+        "Although the days pass; Although time passes; In silence and imperceptibly; So, my love, one more time; Let’s repeat the chorus triumphantly",
+        "So do the days pass; So does time pass; In silence and imperceptibly",
+    },
+    {
+        "As far as the Signs are concerned… There is one you don’t know. It’s called the Somne. Look at my hand.",
+    },
+    --season of storms}}}
     --books}}}
 }
