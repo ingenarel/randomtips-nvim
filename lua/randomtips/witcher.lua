@@ -127,5 +127,20 @@ return {
         "As far as the Signs are concerned… There is one you don’t know. It’s called the Somne. Look at my hand.",
     },
     --season of storms}}}
+    --sword of destiny{{{
+    {
+        "‘To me, Witcher, calling killing a vocation is loathsome, low and nonsensical. Our world is in equilibrium. The",
+        "annihilation, the killing, of any creatures that inhabit this world upsets that equilibrium. And a lack of equilibrium",
+        "brings closer extinction; extinction and the end of the world as we know it.’",
+    },
+    {
+        "Chaos is aggression, Order is protection against it.",
+    },
+    {
+        "I was deprived of the ability to feel so I wouldn’t be able to feel how dreadfully vile is that vileness",
+        "so I wouldn’t retreat from it, wouldn’t run horror-stricken from it.",
+        "Yes, I was stripped of feelings. But not utterly. Whoever did it made a botch of it, Yen.’",
+    },
+    --sword of destiny}}}
     --books}}}
 }
