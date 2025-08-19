@@ -141,6 +141,36 @@ return {
         "so I wouldn’t retreat from it, wouldn’t run horror-stricken from it.",
         "Yes, I was stripped of feelings. But not utterly. Whoever did it made a botch of it, Yen.’",
     },
+    {
+        "What is truth? The negation of lies? Or the statement of a fact?",
+        "And if the fact is a lie, what then is the truth? ",
+    },
+    {
+        "The air bears autumn’s cool scent",
+        "Our words seized by an icy gust",
+        "Your tears have my heart rent",
+        "But all is gone and part we must.",
+    },
+    {
+        "Right before the dawn, while it was still dark, a hungry, vicious werewolf crept up to their camp,",
+        "but saw that it was Dandelion, so he listened for a moment and then went on his way.",
+    },
+    {
+        "Begone, man, get out of Brokilon at once. You have captured the whole world, man, you are everywhere.",
+        "Everywhere you introduce what you call modernity, the era of change, what you call",
+        "progress. But we want neither you nor your progress here. We do not desire the changes you bring.",
+        "We do not desire anything you bring. Get out of Brokilon!",
+    },
+    {
+        "Little dryads were hungry for tales. Just like little witchers. Because both of them were seldom told bedtime stories.",
+        "Little dryads fell asleep listening raptly to the wind blowing in the trees. Little witchers fell asleep listening",
+        "raptly to their aching arms and legs. Our eyes also shone like Braenn’s when we listened to the tales of Vesemir in Kaer",
+        "Morhen. But that was long ago… So long ago…",
+    },
+    {
+        "‘Duettaeánn aef cirrán Cáerme Gláeddyv. Yn á esseáth.’",
+        "‘The Sword of Destiny has two blades… You are one of them.’",
+    },
     --sword of destiny}}}
     --books}}}
 }
