@@ -171,6 +171,29 @@ return {
         "‘Duettaeánn aef cirrán Cáerme Gláeddyv. Yn á esseáth.’",
         "‘The Sword of Destiny has two blades… You are one of them.’",
     },
+    {
+        "Verily I say unto you, the era of the sword and axe is nigh, the era of the wolf’s blizzard. The Time of the White Chill",
+        "and the White Light is nigh, the Time of Madness and the Time of Contempt: Tedd Deireádh, the Time of End. The world",
+        "will die amidst frost and be reborn with the new sun. It will be reborn of the Elder Blood, of Hen Ichaer, of the seed",
+        "that has been sown. A seed which will not sprout but will burst into flame. Ess’tuath esse! Thus it shall be! Watch for",
+        "the signs! What signs these shall be, I say unto you: first the earth will flow with the blood of Aen Seidhe, the",
+        "Blood of Elves…",
+    },
+    {
+        "Intolerance and superstition has always been the domain of the more stupid amongst the common folk and, I conjecture,",
+        "will never be uprooted, for they are as eternal as stupidity itself. There, where mountains tower today, one day there",
+        "will be seas; there where today seas surge, will one day be deserts. But stupidity will remain stupidity.",
+    },
+    {
+        "On the third day all the children died save one, a male barely ten. Hitherto agitated by a sudden madness, he fell all",
+        "at once into deep stupor. His eyes took on a glassy gaze; incessantly with his hands did he clutch at clothing, or",
+        "brandish them in the air as if desirous of catching a quill. His breathing grew loud and hoarse; sweat cold, clammy and",
+        "malodorous appeared on his skin. Then was he once more given elixir through the vein and the seizure it did return. This",
+        "time a nose-bleed did ensue, coughing turned to vomiting, after which the male weakened entirely and became inert. For",
+        "two days more did symptoms not subside. The child’s skin, hitherto drenched in sweat, grew dry and hot, the pulse ceased",
+        "to be full and firm – albeit remaining of average strength, slow rather than fast. No more did he wake, nor did he",
+        "scream. Finally, came the seventh day. The male awoke and opened his eyes, and his eyes were as those of a viper…",
+    },
     --sword of destiny}}}
     --books}}}
 }
