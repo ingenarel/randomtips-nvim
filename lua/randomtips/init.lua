@@ -12,14 +12,14 @@ function m.ReturnRandomTip(tipsLists)
         table.insert(tips, require("randomtips.vtip"))
         table.insert(tips, require("randomtips.gathered"))
     else
-        for i = 1, #tipsLists do
-            table.insert(tips, tipsLists[i])
+        for _, tip in ipairs(tipsLists) do
+            table.insert(tips, tip)
         end
     end
 
     local x = 0
-    for i = 1, #tips do
-        x = x + #tips[i]
+    for _, tip in ipairs(tips) do
+        x = x + #tip
     end
 
     x = math.random(x)
