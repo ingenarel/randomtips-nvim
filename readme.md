@@ -7,3 +7,11 @@ https://h.43z.one/
 
 the bash_irc_quotes.lua file's data was parsed from https://gitlab.com/dwrodri/bash_irc_quotes
 which in turned parsed the data from bash.org
+
+
+
+<sub>Congrats, you made it to the bottom</sub>
+
+<sub>if you can afford to pay my wifi bills, you can support me in patreon: https://www.patreon.com/IngenarelNeoJesus</sub>
+
+<sub>i don't like putting this in my projects, but until my dropout ass finds a way to get a job/proper funding, i have no choice but to accept donations, which i personally don't want to trust me</sub>
