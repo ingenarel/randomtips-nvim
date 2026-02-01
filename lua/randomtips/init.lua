@@ -12,6 +12,7 @@ function m.ReturnRandomTip(tipsLists)
         table.insert(tips, require("randomtips.vtip"))
         table.insert(tips, require("randomtips.gathered"))
         table.insert(tips, require("randomtips.bash_irc_quotes"))
+        table.insert(tips, require("randomtips.linus-torvalds"))
     else
         for _, tip in ipairs(tipsLists) do
             table.insert(tips, tip)

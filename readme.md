@@ -8,6 +8,8 @@ https://h.43z.one/
 the bash_irc_quotes.lua file's data was parsed from https://gitlab.com/dwrodri/bash_irc_quotes
 which in turned parsed the data from bash.org
 
+linus-torvards.lua files's data was gathered from https://en.wikiquote.org/wiki/Linus_Torvalds
+
 
 
 <sub>Congrats, you made it to the bottom</sub>
